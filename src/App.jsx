@@ -1,10 +1,11 @@
-import React from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
+import SubmittedRaging from './components/SubmittedRating/SubmittedRaging';
+import Rating from './components/Rating/Rating';
 
 export default function App() {
-  return (
-    <div>
-      <h1>Hello World 👋</h1>
-    </div>
-  )
+  const [rating, setRating] = useState(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  return <main className="App">{isSubmitted ? <SubmittedRaging /> : <Rating />}</main>;
 }
