@@ -1,0 +1,26 @@
+.button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--dark-blue);
+  cursor: pointer;
+  color: var(--medium-grey);
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.buttonSelected {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.buttonSelected:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
