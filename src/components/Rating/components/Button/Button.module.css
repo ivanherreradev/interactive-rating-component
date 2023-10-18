@@ -24,3 +24,10 @@
   background-color: var(--orange);
   color: var(--white);
 }
+
+@media screen and (max-width: 400px) {
+  .button{
+    width: 42px;
+    height: 42px;
+  }
+}

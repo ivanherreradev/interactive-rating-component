@@ -4,4 +4,11 @@
   border-radius: 24px;
   padding: 30px;
   background-color: var(--container-bg);
+  margin: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .App {
+    width: 290px;
+  }
 }
