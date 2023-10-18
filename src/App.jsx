@@ -7,5 +7,24 @@ export default function App() {
   const [rating, setRating] = useState(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  return <main className="App">{isSubmitted ? <SubmittedRaging /> : <Rating />}</main>;
+  const handleClickRating = (rating) => {
+    setRating(rating);
+  };
+
+  const handleClickSubmitted = () => {
+    setIsSubmitted(true);
+  };
+
+  return (
+    <main className="App">
+      {isSubmitted ? (
+        <SubmittedRaging />
+      ) : (
+        <Rating
+          handleClickRating={handleClickRating}
+          handleClickSubmitted={handleClickSubmitted}
+        />
+      )}
+    </main>
+  );
 }
