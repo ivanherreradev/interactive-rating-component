@@ -1,0 +1,30 @@
+.ratingContainer p {
+    color: var(--medium-grey);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.star {
+  padding: 10px;
+  background-color: var(--dark-blue);
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.star img {
+  width: 25px;
+  height: 25px;
+}
+
+.buttonSubmit {
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+}
