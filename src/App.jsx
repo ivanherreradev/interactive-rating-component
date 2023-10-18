@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
-import SubmittedRaging from './components/SubmittedRating/SubmittedRaging';
+import SubmittedRaging from './components/SubmittedRating/SubmittedRating';
 import Rating from './components/Rating/Rating';
+import './App.css';
 
 export default function App() {
   const [rating, setRating] = useState(null);
@@ -18,7 +18,7 @@ export default function App() {
   return (
     <main className="App">
       {isSubmitted ? (
-        <SubmittedRaging />
+        <SubmittedRaging rating={rating} />
       ) : (
         <Rating
           handleClickRating={handleClickRating}
