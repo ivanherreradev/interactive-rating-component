@@ -1,7 +1,7 @@
 .ratingContainer p {
-    color: var(--medium-grey);
-    line-height: 1.5;
-    margin-top: 10px;
+  color: var(--medium-grey);
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 .star {
@@ -27,4 +27,10 @@
   background-color: var(--orange);
   color: var(--white);
   text-transform: uppercase;
+}
+
+.buttonSubmit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: 0.3s;
 }
